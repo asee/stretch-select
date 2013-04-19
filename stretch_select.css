@@ -1,0 +1,91 @@
+.stretch-select-wrapper {
+  height: 20px;
+  position: relative;
+}
+
+.stretch-select {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 5px;}
+.stretch-select input {display: inline;}
+.stretch-select label {display: inline;}
+
+.stretch-select-row {
+  padding: 5px 0 5px 5px;
+  border-bottom: thin solid #ddd;}
+.stretch-select-row:hover {background-color: rgba(255, 255, 153, 0.6);}
+
+
+
+.stretch-select-open {
+  position: absolute;
+  z-index: 30;
+  width: 100%;
+}
+
+.stretch-select-open-body {
+  max-height: 180px;
+  border: 2px solid #444;
+  float: left;
+  overflow-y: auto;
+  background-color: white;
+  width: 100%;
+}
+
+.stretch-select-open-controls > div {
+  float: left;
+}
+
+a.stretch-select-button {
+  text-align: center;
+  border: 1px black solid;
+  border-top: none;
+  cursor: pointer;
+  padding: 3px 8px;
+  background-color: #ffc;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+a.stretch-select-button:hover {
+  background-color: #ff6;
+}
+
+
+
+.stretch-select-closed-wrapper {
+  position: absolute;
+  width: 100%;
+}
+
+.stretch-select-closed {
+  display: block;
+  position: relative;
+  padding: 2px 3px 2px 5px;
+  cursor: pointer;
+  overflow-x: hidden;
+  white-space: nowrap;
+  border: thin solid #444;
+  background-color: white;
+  max-height: 200px;
+}
+.stretch-select-closed:hover {
+  background-color: rgba(255, 255, 153, 0.4);
+}
+
+.stretch-select-arrow {
+  position: absolute;
+  right: 3px;
+}
+
+.stretch-select-closed-text {
+  overflow-x: hidden;
+  margin-right: 18px;}
+
+.stretch-select .total {display: inline;}
+.stretch-select .summary {
+  display: inline;
+  color: #666;
+  overflow-x: hidden;}
+
